@@ -17,8 +17,8 @@ function App() {
     <div>
   
       <Switch>
-        <Route path='/hats' component={HomePage} />
-        <Route path='/hats/01' component={HatsPage} />
+        <Route path='/home' component={HomePage} />
+        <Route path='/hats' component={HatsPage} />
       </Switch>
      
     </div>
