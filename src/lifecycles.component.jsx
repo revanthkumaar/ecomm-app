@@ -3,11 +3,11 @@ import React from 'react';
 class Lifecycles extends React.Component{
 
 
-    constructor(){
+    constructor(props){
 
-        super();
+        super(props); //REFER THIS CHILD CONSTRUCTOR TO PARENT CONSTRUCTOR OF REACT
 
-        console.log('constructor function')
+        console.log('constructor function of lifecyle comp')
 
     }
 
@@ -26,7 +26,8 @@ class Lifecycles extends React.Component{
 
       shouldComponentUpdate(nextProps,nextState){
           console.log('shouldComponentUpdate', nextProps);
-          
+          console.log(nextState)
+          return nextProps.text !== this.props.text
       }
     
 

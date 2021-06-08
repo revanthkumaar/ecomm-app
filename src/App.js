@@ -10,16 +10,20 @@ class App extends React.Component{
   constructor() {
     super();
 
+    console.log('constructor of app component')
+
     //data
 
-    this.state = {
+    this.state = { //INITIALIZE THE DATA
       showChild: true,
-      text: ''
+      text: 'initial Revanth',
+      number: 123
     };
   }
 
   render(){
     //throwing HTML to the DOM
+    console.log('render of app component')
     return(
       <div className='App'>
       <header className='App=header'>
@@ -45,7 +49,7 @@ class App extends React.Component{
             Update Text
           </button>
 
-      {this.state.showChild ?   <Lifecycles text={this.state.text}/> : null }
+      {this.state.showChild ?   <Lifecycles text={this.state.text} number={this.state.number} /> : null }
 
       </header>
 
