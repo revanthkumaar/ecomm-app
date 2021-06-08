@@ -39,7 +39,6 @@ class Lifecycles extends React.Component{
         return(
             <div className="lifecyles">
                 <h3>Data from app component is here at lifecyles comp</h3>
-                {this.props.text}
             </div>
         )
 
